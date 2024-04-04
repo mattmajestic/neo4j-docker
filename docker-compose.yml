@@ -3,7 +3,7 @@ services:
     image: neo4j:latest
     container_name: neo4j-playground
     environment:
-      NEO4J_AUTH: neo4j/demo_secret  # Ensure the password is at least 8 characters
+      NEO4J_AUTH: none  # Ensure the password is at least 8 characters
     volumes:
       - ./data:/data
       - ./logs:/logs
